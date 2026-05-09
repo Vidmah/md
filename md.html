@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MomFlix ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#000;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    height:8px;
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#e50914;
+    border-radius:10px;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background-image:
+    linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.3)),
+    url('1.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:60px;
+}
+
+.logo{
+    position:absolute;
+    top:25px;
+    left:40px;
+
+    color:#e50914;
+    font-size:34px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.hero h1{
+    font-size:75px;
+    max-width:700px;
+    margin-bottom:20px;
+    line-height:1.1;
+}
+
+.hero p{
+    max-width:650px;
+    font-size:22px;
+    color:#ddd;
+    line-height:1.7;
+}
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.play-btn{
+    background:white;
+    color:black;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:6px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.play-btn:hover{
+    background:#ddd;
+    transform:scale(1.05);
+}
+
+.info-btn{
+    background:rgba(109,109,110,0.7);
+    color:white;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.info-btn:hover{
+    background:rgba(255,255,255,0.2);
+    transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+    padding:70px 50px;
+}
+
+.section-title{
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+/* FEATURE CARD */
+
+.feature-card{
+    background:#141414;
+    border-radius:18px;
+    padding:35px;
+
+    display:flex;
+    gap:35px;
+    align-items:center;
+    flex-wrap:wrap;
+
+    box-shadow:0 0 30px rgba(255,255,255,0.08);
+}
+
+.feature-card img{
+    width:340px;
+    max-width:100%;
+    border-radius:15px;
+    object-fit:cover;
+}
+
+.feature-text{
+    flex:1;
+    min-width:250px;
+}
+
+.feature-text h1{
+    color:#e50914;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.feature-text p{
+    font-size:19px;
+    line-height:1.9;
+    color:#ddd;
+}
+
+.love-btn{
+    margin-top:25px;
+    background:#e50914;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    font-size:17px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.love-btn:hover{
+    transform:scale(1.05);
+    background:#ff1e28;
+}
+
+/* MEMORIES */
+
+.memories{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-bottom:15px;
+}
+
+.memories img{
+    height:240px;
+    width:auto;
+    border-radius:14px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.memories img:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(255,255,255,0.2);
+}
+
+/* QUOTE */
+
+.quote{
+    background:#111;
+    padding:90px 30px;
+    text-align:center;
+}
+
+.quote h1{
+    color:#e50914;
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.quote p{
+    font-size:22px;
+    color:#bbb;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    color:#777;
+    padding:30px;
+    font-size:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+        padding:30px;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .logo{
+        left:20px;
+        font-size:28px;
+    }
+
+    .section{
+        padding:50px 20px;
+    }
+
+    .feature-text h1{
+        font-size:32px;
+    }
+
+    .quote h1{
+        font-size:34px;
+    }
+
+    .quote p{
+        font-size:18px;
+    }
+
+    .memories img{
+        height:180px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="logo">
+        MOMFLIX-Streaming Since 2006
+    </div>
+
+    <h1>
+        THE WORLD'S BEST MOM ❤️
+    </h1>
+
+    <p>
+        A beautiful story filled with unconditional love, strength,
+        sacrifices, warmth, hugs, and endless support.
+        Streaming forever in my heart.
+    </p>
+
+    <div class="buttons">
+
+        <button class="play-btn"
+        onclick="document.getElementById('message').scrollIntoView({behavior:'smooth'})">
+            ▶ Play
+        </button>
+
+        <button class="info-btn">
+            More Info
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FEATURED STORY -->
+
+<div class="section" id="message">
+
+    <h2 class="section-title">
+        Featured Story
+    </h2>
+
+    <div class="feature-card">
+
+        <img src="2.jpeg">
+
+        <div class="feature-text">
+
+            <h1>
+                Dear Mumma ❤️
+            </h1>
+
+            <p>
+                Thank you for being my safe place, my biggest supporter,
+                and the strongest woman I know.
+                Every sacrifice you made, every sleepless night,
+                every hug, and every smile shaped my world.
+            </p>
+
+            <br>
+
+            <p>
+                No matter how old I grow,
+                I will always need your love.
+                You are not just my mother...
+                You are my home.
+            </p>
+
+            <button class="love-btn">
+                ❤️ Happy Mother's Day
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- MEMORIES -->
+
+<div class="section">
+
+    <h2 class="section-title">
+        Our Beautiful Memories
+    </h2>
+
+    <div class="memories">
+
+        <img src="3.jpeg">
+        <img src="4.jpeg">
+        <img src="5.jpeg">
+        <img src="6.jpeg">
+        <img src="7.jpeg">
+
+    </div>
+
+</div>
+
+<!-- QUOTE -->
+
+<div class="quote">
+
+    <h1>
+        “A mother's love is the first home we ever know.”
+    </h1>
+
+    <p>
+        Forever grateful for you ❤️
+    </p>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    Made with endless love for the best mom in the world ❤️
+</div>
+
+</body>
+</html>
